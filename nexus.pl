@@ -33,7 +33,7 @@ $host_tree =~ s/://g;
 print "\tTREE * Host1 = $host_tree\n";
 print "ENDBLOCK;\n\n";
 
-print "BEGIN PARASITE\n";
+print "BEGIN PARASITE;\n";
 my $parasite_tree = slurp_file($ARGV[1]);
 $parasite_tree =~ s/1\.00000000//g;
 $parasite_tree =~ s/\d+\.\d{5,}//g;
